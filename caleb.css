@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Poppins:ital,wght@1,700&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("img/images (14).jpeg");
+}
+
+.container {
+    position: relative;
+}
+
+.centered-image {
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+    width: 300px; /* adjust the size of the image as needed */
+    height: 300px;
+    border: 10px solid #4f40db;
+}
+@media screen and (max-width: 600px) {
+  img {
+    width: 250px; /* Adjust width for smaller screens */
+    height: 250px; /* Adjust height for smaller screens */
+  }
+}
+
+/* Media Query for Medium Screens */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  img {
+    width: 700px; /* Adjust width for medium screens */
+    height: 700px; /* Adjust height for medium screens */
+    border: 20px solid #4f40db;
+  }
+}
+.animated-text {
+  
+  font-family: Poppins;
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+background: linear-gradient(135deg,#ff00d2,#fed90f,#00a2ff,#09f1b8,#ff00d2,#fed90f,#00a2ff,#09f1b8);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-size: 300% 300%;
+animation: gradient 8s ease-in-out infinite;
+
+}
+@keyframes gradient{
+ 0%{
+   background-position: 0% 50%;
+ }
+50%{
+   background-position: 0% 50%;
+ }
+ 100%{
+   background-position: 0% 50%;
+ }
+}
+@media screen and (max-width: 600px) {
+  .animated-text {
+    font-size: 50px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media Query for Medium Screens */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .animated-text {
+    font-size: 130px; /* Adjust font size for medium screens */
+  }
+}
